@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Greener World</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+        <script>
+    var i = 0;
+    var images = [];
+    var time = 3000;
+
+    images = ['../Images/earth.jpg','../Images/deadearth.jpg'];
+
+    function changeImg(){
+    document.getElementById("slide").src= images[i];
+
+    if (i < images.length - 1){
+    i++
+    }
+    else {
+    i = 0;}
+    setTimeout("changeImg()", time);
+    }
+    window.onload = changeImg;
+    </script>
+
+
+    </head>
+    <body>
+        <nav>
+          <div class = "topbar">
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#goal">Goal</a></li>
+              <li><a href="#application">Application</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <!-- Home Section -->
+        <div id="home"><a id="home"></a>
+        <img src="../Images/logo.png" alt="Logo" id="logo">
+        <br/>
+        <div class="center">
+        <h1> Welcome to Greener World</h1>
+        <p> Mapping a Greener Earth</p>
+        </div>
+      </div>
+
+
+        <!-- About Section -->
+        <a id="about"></a>
+        <div class="container">
+          <div class="row">
+            <div class="column-66">
+              <h1 class="xlarge-font"><b>About</b></h1>
+
+              <p style = "font-size: 24pt;">
+            Are you tired of companies dumping toxic waste into places that should be kept clean?
+            Greener Map is a place where you can take pictures of companies that's illegally harming the ecosystem and gives us the ability to report such problem to the right people.
+            By doing so, we are able to create a future where companies are held accountable for the waste they create and lead to a Greener Map.
+
+              </p>
+            </div>
+            <div class="column-33">
+                <img src="null" id="slide" width="471" height="471">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Goal Section -->
+        <a id="goal"></a>
+        <div class="container" style="background-color:#f1f1f1">
+            <div class ="center" style = "border-style: none">
+              <h1 class="xlarge-font"><b>Goal</b></h1>
+              <p style = "font-size: 24pt;">
+              Our company wants to bring awareness to improper disposal of toxic waste and deforestation through the use Instagram's Geotag location API.
+              Encouraging users to report incendents that the feel has not been treated properly.
+              </p>
+              <p> Use the #greenerworld on Instagram to report </p>
+            </div>
+        </div>
+
+        <!-- The App Section -->
+        <a id="application"></a>
+        <div class="container">
+          <div class="row">
+              <h1 class="xlarge-font"><b>Application</b></h1>
+
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <img class="Img imgsize" src="../Images/hashtag.png" alt="">
+      <img class="Img imgsize" src="../Images/data.png" alt="">
+  		<img class="Img imgsize" src="../Images/Map.png" alt="">
+
+  		<div id="myModal" class="modal">
+  		<span class="close">&times;</span>
+  		<img class="modalcontent" id="firstimg" alt="" src="null">
+  		<div id="caption"></div>
+  		</div>
+
+  		<script src="../js/image.js"></script>
+
+        </div>
+
+        <p style = "font-size: 24pt;">
+          Our product is based around having large amounts of user inputed images and data, we decided to use Instagram as a platform which makes it easy for users to interact with, as most people already use instagram. The only user action that is required to submit to our application is to post to instagram with the hashtag #GreenerWorld.
+
+          We utilized a PhantomBuster API to scrape data from Instagram, which generates a CVS/Json file that has all information on posts that use the hashtag such as username, image link, and location.
+
+          Using the CSV file we can input the location data of all posts into the Google Maps API to create custom maps of our collected data.  With this we can see all locations in which user reported corporate abuse of the environment.
+        </p>
+
+      </div>
+
+        <!-- Contact Section -->
+        <a id="contact"></a>
+        <div class="container" style="background-color:#f1f1f1">
+          <div class="row">
+
+              <h1 class="xlarge-font"><b>Contact</b></h1>
+              <p> Got a Question? We would like to hear from you. Send us a message </p>
+
+              <fieldset class="info">
+                        <label>Full Name:</label>
+          		<input type="text" name="fullname" required="" /><br />
+          		<br />
+
+                        <label>Email:</label>
+          		<input type="email" name="Email" required="" /><br />
+          		<br />
+
+                        <label>Message:</label>
+          		<textarea id="basic" rows="4" cols="50">
+                  </textarea><br />
+          		<br />
+          		<label><br/></label><input type="submit" value="Contact Us"/>
+            </fieldset>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+    </body>
+
+</html>
