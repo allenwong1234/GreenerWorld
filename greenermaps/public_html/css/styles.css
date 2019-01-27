@@ -133,6 +133,7 @@ body {
 .info{
 	width:500px;
 	border-width:0px;
+  margin-left: 20%;
 }
 
 label{
@@ -158,15 +159,6 @@ input {
 select {
 	width:250px;
 }
-
-
-
-
-
-
-
-
-
 
 
 

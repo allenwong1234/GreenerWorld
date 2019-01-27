@@ -14,7 +14,7 @@ and open the template in the editor.
         <script>
     var i = 0;
     var images = [];
-    var time = 3000;
+    var time = 5000;
 
     images = ['./Images/earth.jpg','./Images/deadearth.jpg'];
 
@@ -37,7 +37,7 @@ and open the template in the editor.
         <nav>
           <div class = "topbar">
           <ul>
-              <li><a href="#home">Home</a></li>
+              <li><a href="#home">Home</a></li> <a id="home"></a>
               <li><a href="#about">About</a></li>
               <li><a href="#goal">Goal</a></li>
               <li><a href="#application">Application</a></li>
@@ -49,7 +49,7 @@ and open the template in the editor.
 
 
         <!-- Home Section -->
-        <div id="home"><a id="home"></a>
+        <div id="home">
         <img src="./Images/logo.png" alt="Logo" id="logo">
         <br/>
         <div class="center">
@@ -58,23 +58,36 @@ and open the template in the editor.
         </div>
       </div>
 
+      <br/>
+        <br/>
+          <br/>
+            <br/>
+              <br/>
+                <br/>
+                  <br/>
+                    <br/>
+                      <br/>
+                        <br/>
+
 
         <!-- About Section -->
         <a id="about"></a>
-        <div class="container">
+        <div class="container" style="background-color: lightgreen;">
           <div class="row">
             <div class="column-66">
               <h1 class="xlarge-font"><b>About</b></h1>
 
-              <p style = "font-size: 24pt;">
-            Are you tired of companies dumping toxic waste into places that should be kept clean?
-            Greener Map is a place where you can take pictures of companies that's illegally harming the ecosystem and gives us the ability to report such problem to the right people.
-            By doing so, we are able to create a future where companies are held accountable for the waste they create and lead to a Greener Map.
+              <p style = "font-size: 22pt;">
+                Environmental abuse by large corporations is a huge problem as companies are often more focused
+                on profit margins rather than environmental protection and sustainabililty, especially in developing countries.
+                Greener Maps is place where users can take pictures of companies whose actions harm the environment such as waste dumping,
+                deforestation, and air pollution. Our goal is to raise public awarness of companies who aren't doing their part
+                in preserving the environment so they can be held accountable.
 
               </p>
             </div>
             <div class="column-33">
-                <img src="null" id="slide" width="350" height="350">
+                <img src="null" id="slide" width="450" height="450" style = "margin-top: 100px;">
 
             </div>
           </div>
@@ -82,20 +95,21 @@ and open the template in the editor.
 
         <!-- Goal Section -->
         <a id="goal"></a>
-        <div class="container" style="background-color:#f1f1f1">
+        <div class="container">
             <div class ="center" style = "border-style: none">
               <h1 class="xlarge-font"><b>Goal</b></h1>
               <p style = "font-size: 24pt;">
               Our company wants to bring awareness to improper disposal of toxic waste, deforestation through the use Instagram's Geotag location API.
               Encouraging users to report incendents that the feel has not been treated properly.
               </p>
-              <p> Use the #greenerworld on Instagram to report </p>
+              <p style = "font-size: 18pt;">
+               Use the #greenerworld on Instagram to report </p>
             </div>
         </div>
 
         <!-- The App Section -->
         <a id="application"></a>
-        <div class="container">
+        <div class="container" style="background-color: lightgreen;">
           <div class="row">
               <h1 class="xlarge-font"><b>Application</b></h1>
 
@@ -121,12 +135,14 @@ and open the template in the editor.
             We utilized a PhantomBuster API to scrape data from Instagram, which generates a CVS/Json file that has all information on posts that use the hashtag such as username, image link, and location.
             Using the CSV file we can input the location data of all posts into the Google Maps API to create custom maps of our collected data.  With this we can see all locations in which user reported corporate abuse of the environment.
           </p>
+
+        <a href="http://jsonviewer.stack.hu/#http://phantombuster.s3.amazonaws.com/nmLGNP7QmwI/0DKKWioY6dyNDEk1zvbVHA/UNCC_Scrape.json"> Prototype</a>
       </div>
 
         <!-- Contact Section -->
         <a id="contact"></a>
-        <div class="container" style="background-color:#f1f1f1">
-          <div class="center">
+        <div class="container">
+          <div class="center" style = "border-style: none;">
 
               <h1 class="xlarge-font"><b>Contact</b></h1>
               <p> Got a Question? We would like to hear from you. Send us a message </p>
@@ -141,7 +157,7 @@ and open the template in the editor.
           		<br />
 
                         <label>Message:</label>
-          		<textarea id="basic" rows="4" cols="100">
+          		<textarea id="basic" rows="4" cols="50">
                   </textarea><br />
           		<br />
           		<label><br/></label><input type="submit" value="Contact Us"/>
